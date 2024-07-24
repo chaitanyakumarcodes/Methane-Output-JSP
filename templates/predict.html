@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methane Output Prediction</title>
+</head>
+<body>
+    <h1>Enter the Values for Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Count">Count:</label>
+        <input type="text" id="Count" name="Count" required><br><br>
+        
+        <label for="Syngas_Header_Pressure">Syngas Header Pressure:</label>
+        <input type="text" id="Syngas_Header_Pressure" name="Syngas_Header_Pressure" required><br><br>
+
+        <label for="Avg_TR5">Avg TR5:</label>
+        <input type="text" id="Avg_TR5" name="Avg_TR5" required><br><br>
+
+        <label for="Avg_HP_BFW">Avg HP BFW:</label>
+        <input type="text" id="Avg_HP_BFW" name="Avg_HP_BFW" required><br><br>
+
+        <label for="Avg_TR4">Avg TR4:</label>
+        <input type="text" id="Avg_TR4" name="Avg_TR4" required><br><br>
+
+        <label for="Avg_CO2">Avg CO2:</label>
+        <input type="text" id="Avg_CO2" name="Avg_CO2" required><br><br>
+
+        <label for="Avg_HP_O2">Avg HP O2:</label>
+        <input type="text" id="Avg_HP_O2" name="Avg_HP_O2" required><br><br>
+
+        <label for="VM_wt">VM(wt%):</label>
+        <input type="text" id="VM_wt" name="VM_wt" required><br><br>
+
+        <label for="ASH_wt">ASH(wt%):</label>
+        <input type="text" id="ASH_wt" name="ASH_wt" required><br><br>
+
+        <label for="FC_wt">FC(wt%):</label>
+        <input type="text" id="FC_wt" name="FC_wt" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
